@@ -107,14 +107,70 @@
        <h5>Heading 5</h5>
        <h6>Heading 6</h6>
 
-       <img src="arhama.01.webp" width="200" height="200">
-       <button>hello </button>
+       <img src="C:\Users\danish\Desktop\html coding\computer pic.jpg" width="200" height="200">
+      <br>
+       <button>hello </button><br><br>
+
+       <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+
+      <style>
+        #div1, #div2 {
+          float: left;
+          width: 100px;
+          height: 35px;
+          margin: 10px;
+          padding: 10px;
+          border: 1px solid black;
+        }
+        </style>
+        <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
+        </head>
+        <body>
+        
+        <h2>Drag and Drop</h2>
+        <p>Drag the image back and forth between the two div elements.</p>
+        
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img src="C:\Users\danish\Desktop\html coding\w3 schools.jpeg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+        </div>
+        
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br><br><br><br>
+        
+
+        <h1> hello world</h1>
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+        </iframe>
+       
+        <p>I will display A B C</p> 
+        <p>I will display &#65; &#66; &#67;</p> 
+
+        <h2>HTML Iframes</h2>
+
+      
+       <p>You can also use the CSS height and width properties to specify the size of the iframe:</p>
+     <iframe src="demo_iframe.htm" style="height:200px;width:300px" title="Iframe Example"></iframe>
 
 
-    
-    
-
-   
     
 </body>
 </html>
