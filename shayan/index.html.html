@@ -143,18 +143,254 @@ Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo
         <h2>The src Attribute</h2>
 <p>HTML images are defined with the img tag, and the filename of the image source is specified in the src attribute:</p>
 
-<img src="https://ladieswhodolunchinkuwait.blogspot.com/2011/01/better-book-store-for-second-hand-books.html" width="200" height="200">
 
-
+<img src="computer image.jpg" width="200" height="200">
+</br>
 <button>click me</button>
-
-
+      
 <ul> 
   <h1>Grocerry Items </h1>
   <li>coffee</li>
   <li>chips</li>
-
 </ul>
 
+
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+
+
+<style>
+  #div1 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+  }
+  </style>
+  <script>
+  function allowDrop(ev) {
+    ev.preventDefault();
+  }
+  
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+  
+  function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
+  </script>
+  </head>
+  <body>
+  
+  <p>Drag the W3Schools image into the rectangle:</p>
+  
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <br>
+  <img id="drag1" src="C:\Users\home\Desktop\html coding\w3 logo.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+
+  
+</head>
+<body>
+
+<h2>The id Attribute</h2>
+<p>Use CSS to style an element with the id "myHeader":</p>
+
+<h1 id="myHeader">My Header</h1>
+
+
+<style>
+  #div1, #div2 {
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  </style>
+  <script>
+  function allowDrop(ev) {
+    ev.preventDefault();
+  }
+  
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+  
+  function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
+  </script>
+  </head>
+  <body>
+  
+  <h2>Drag and Drop</h2>
+  <p>Drag the image back and forth between the two div elements.</p>
+  
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="C:\Users\home\Desktop\html coding\w3 logo.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+  </div>
+  
+  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br><br>
+  
+
+</br>
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+  </iframe> 
+  
+
         </body>    
+</html>
+<br><br><br><br>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+</head>
+<body>
+  <form action="form.php" method="post">
+    <input type="text" name="name" placeholder="Enter your name">
+    <input type="email" name="email" placeholder="Enter your email">
+    <input type="submit" value="Submit"><br><br><br><br><br><br><br><br>
+  </form>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Input</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td><input type="text" name="name1" placeholder="Enter name"></td>
+      <td><input type="email" name="email1" placeholder="Enter email"></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="name2" placeholder="Enter name"></td>
+      <td><input type="email" name="email2" placeholder="Enter email"></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="name3" placeholder="Enter name"></td>
+      <td><input type="email" name="email3" placeholder="Enter email"></td>
+    </tr>
+  </table>
+
+
+
+
+  
+  <p><a href="#C1">Jump to Chapter 1</a></p>
+  <p><a href="#C2">Jump to Chapter 2</a></p>
+  <p><a href="#C3">Jump to Chapter 3</a></p>
+  <p><a href="#C4">Jump to Chapter 4</a></p>
+  <p><a href="#C5">Jump to Chapter 5</a></p>
+
+  <h2 id="c1">"Chapter 1"</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2  id="C2">Chapter 2</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2 id="C3">Chapter 3</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2 id="C4">Chapter 4</h2>
+  <p>This chapter explains ba bla bla</p>
+
+  <h2 id ="C5">Chapter 5</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2>Chapter 6</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2>Chapter 7</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2>Chapter 8</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2>Chapter 9</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2 id="C10">Chapter 10</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2>Chapter 11</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2>Chapter 12</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2>Chapter 13</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2>Chapter 14</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2>Chapter 15</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2>Chapter 16</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2>Chapter 17</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2>Chapter 18</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2>Chapter 19</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2>Chapter 20</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2>Chapter 21</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2>Chapter 22</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+  <h2>Chapter 23</h2>
+  <p>This chapter explains ba bla bla</p>
+  
+
+  
+<p>I will display A B C</p> 
+<p>I will display &#65; &#66; &#67;</p> 
+
+
+
+
+
+
+
+
+</body>
 </html>
