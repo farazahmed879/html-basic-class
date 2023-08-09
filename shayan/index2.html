@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    
+    <style>
+        body {
+          background-color:whitesmoke;
+        }
+        
+        h1 {
+          color: black;
+          text-align: center;
+        }
+        
+        p {
+          font-family: verdana;
+          font-size: 20px;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h1>My First CSS Example</h1>
+        <p>This is a paragraph.</p>                                                                                                                                                
+       <hr>
+
+        <style>
+            /* This is a multi-line comment */
+
+            p.center {
+              text-align: center;
+              color: red;
+            }
+            
+            p.large {
+              font-size: 300%;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h1 class="center">This heading will not be affected</h1>
+            <p class="center">This paragraph will be red and center-aligned.</p>
+            <p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p> 
+             <hr>
+
+
+             <style>
+                #para1 {
+                  text-align: center;
+                  color: red;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <p id="para1">Hello World!</p>
+                <p>This paragraph is not affected by the style.</p>
+                
+            <hr>
+
+<h1 style="background-color:white;">Hello World</h1>
+
+<p style="background-color:white;">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+</p>
+<hr>
+
+<h3 style="color:black;">Hello World</h3>
+
+<p style="color:black;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+<p style="color:black;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<hr>
+
+<h1 style="border: 2px solid Tomato;">Hello World</h1>
+
+<h1 style="border: 2px solid DodgerBlue;">Hello World</h1>
+
+<h1 style="border: 2px solid Violet;">Hello World</h1>
+<hr>
+
+<style>
+    div {
+      background-color: green;
+    }
+    
+    div.first {
+      opacity: 0.1;
+    }
+    
+    div.second {
+      opacity: 0.3;
+    }
+    
+    div.third {
+      opacity: 0.6;
+    }
+    </style>
+    </head>
+    <body>
+    <hr>
+
+    <h1>Transparent Boxes</h1>
+    
+    <p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+    
+    <div class="first">
+      <h1>opacity 0.1</h1>
+    </div>
+    
+    <div class="second">
+      <h1>opacity 0.3</h1>
+    </div>
+    
+    <div class="third">
+      <h1>opacity 0.6</h1>
+    </div>
+    
+    <div>
+      <h1>opacity 1 (default)</h1>
+    </div>
+    <hr>
+    
+    <style>
+        p.dotted {border-style: dotted;}
+        p.dashed {border-style: dashed;}
+        p.solid {border-style: solid;}
+        p.double {border-style: double;}
+        p.groove {border-style: groove;}
+        p.ridge {border-style: ridge;}
+        p.inset {border-style: inset;}
+        p.outset {border-style: outset;}
+        p.none {border-style: none;}
+        p.hidden {border-style: hidden;}
+        p.mix {border-style: dotted dashed solid double;}
+        </style>
+        </head>
+        <body>
+        
+        <h2>The border-style Property</h2>
+        <p>This property specifies what kind of border to display:</p>
+        
+        <p class="dotted">A dotted border.</p>
+        <p class="dashed">A dashed border.</p>
+        <p class="solid">A solid border.</p>
+        <p class="double">A double border.</p>
+        <p class="groove">A groove border.</p>
+        <p class="ridge">A ridge border.</p>
+        <p class="inset">An inset border.</p>
+        <p class="outset">An outset border.</p>
+        <p class="none">No border.</p>
+        <p class="hidden">A hidden border.</p>
+        <p class="mix">A mixed border.</p>
+        
+        <hr>
+
+        <style>
+            div {                         
+              margin: 20px;
+              border: 1px solid #4CAF50;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>CSS Margins</h2>
+            
+            <div>This element has a margin of 70px.</div>    
+          <hr>
+        </body>
+
+        <body>
+
+            <style>
+    div {
+      padding: 70px;
+      border: 1px solid #4CAF50;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h2>CSS Padding</h2>
+    <div>This element has a padding of 70px.</div>
+    <hr>
+
+
+
+    <head>
+        <style>
+        div {
+          max-width: 500px;
+          height: 100px;
+          background-color: powderblue;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>Set the max-width of an element</h2>
+        
+        <div>This div element has a height of 100px and a max-width of 500px.</div>
+         <p>Resize the browser window to see the effect.</p>
+        
+ </body>
+     <hr>
+
+ <head>
+    <style>
+    div {
+      background-color: lightgrey;
+      width: 300px;
+      border: 15px solid green;
+      padding: 50px;
+      margin: 20px;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h2>Demonstrating the Box Model</h2>
+    
+    <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.</p>
+
+    <div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit </div>
+    </body>
+    <hr>
+
+
+
+    <head>
+      <style>
+      .p1 {
+        font-family: "Times New Roman", Times, serif;
+      }
+      
+      .p2 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .p3 {
+        font-family: "Lucida Console", "Courier New", monospace;
+      }
+      </style>
+      </head>
+      <body>
+      
+      <h1>CSS font-family</h1>
+      <p class="p1">This is a paragraph, shown in the Times New Roman font.</p>
+      <p class="p2">This is a paragraph, shown in the Arial font.</p>
+      <p class="p3">This is a paragraph, shown in the Lucida Console font.</p>
+      <hr>
+
+
+
+      <head>
+        <title>Google Icons</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        </head>
+        <body>
+        
+        <h1>Google icon library</h1>
+        
+        <p>Some Google icons:</p>
+        <i class="material-icons">cloud</i>
+        <i class="material-icons">favorite</i>
+        <i class="material-icons">attachment</i>
+        <i class="material-icons">computer</i>
+        <i class="material-icons">traffic</i>
+        <br><br>
+        
+        <p>Styled Google icons (size and color):</p>
+        <i class="material-icons" style="font-size:24px;">cloud</i>
+        <i class="material-icons" style="font-size:36px;">cloud</i>
+        <i class="material-icons" style="font-size:48px;color:red;">cloud</i>
+        <i class="material-icons" style="font-size:60px;color:lightblue;">cloud</i>
+       <hr>
+       
+       <head>
+        <style>
+        a {
+          color: hotpink;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>Style a link with a color</h2>
+        
+        <p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+        <hr>
+
+        <head>
+          <style>
+          ul.a {
+            list-style-type: circle;
+          }
+          
+          ul.b {
+            list-style-type: square;
+          }
+          
+          ol.c {
+            list-style-type: upper-roman;
+          }
+          
+          ol.d {
+            list-style-type: lower-alpha;
+          }
+          </style>
+          </head>
+          <body>
+          
+          <h2>The list-style-type Property</h2>
+          
+          <p>Example of unordered lists:</p>
+          <ul class="a">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ul>
+          
+          <ul class="b">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ul>
+          
+          <p>Example of ordered lists:</p>
+          <ol class="c">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          
+          <ol class="d">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <hr>
+
+          <head>
+            <style>
+            table, td, th {
+              border: 1px solid;
+            }
+            
+            table {
+              width: 100%;
+              border-collapse: collapse;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>Let the table borders collapse</h2>
+            
+            <table>
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+              </tr>
+              <tr>
+                <td>Peter</td>
+                <td>Griffin</td>
+              </tr>
+              <tr>
+                <td>Lois</td>
+                <td>Griffin</td>
+              </tr>
+            </table>
+          <hr>            
+          
+          <head>
+            <style>
+            li {
+              display: outline;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <p>Display a list of links as a horizontal menu:</p>
+            
+            <ul>
+              <li><a href="/html/default.asp" target="_blank">HTML</a></li>
+              <li><a href="/css/default.asp" target="_blank">CSS</a></li>
+              <li><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+            </ul>
+            <hr>
+
+            <head>
+              <style>
+              div.sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                padding: 3px;
+                background-color: #cae8ca;
+                border: 2px solid #4CAF50;
+              }
+              </style>
+              </head>
+              <body>
+              
+              <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+              
+              <div class="sticky">I am sticky!</div>
+              
+              <div style="padding-bottom:100px">
+                <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+                 </div>
+              <hr>
+              
+              <head>
+                <style>
+                img {
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  z-index: -1;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <h1>This is a heading</h1>
+                <img src="img_tree.png">
+                <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+                
+             <hr>             
+             
+       
+             
+
+             <head>
+              <style>
+              ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+              }
+              </style>
+              </head>
+              <body>
+              
+              <p>In this example, we remove the bullets from the list, and its default padding and margin.</p>
+              
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+              </ul>
+              <hr>
+
+
+              <head>
+                <style>
+                .dropbtn {
+                  background-color: #4CAF50;
+                  color: white;
+                  padding: 16px;
+                  font-size: 16px;
+                  border: none;
+                  cursor: pointer;
+                }
+                
+                .dropdown {
+                  position: relative;
+                  display: inline-block;
+                }
+                
+                .dropdown-content {
+                  display: none;
+                  position: absolute;
+                  background-color: #f9f9f9;
+                  min-width: 160px;
+                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                  z-index: 1;
+                }
+                
+                .dropdown-content a {
+                  color: black;
+                  padding: 12px 16px;
+                  text-decoration: none;
+                  display: block;
+                }
+                
+                .dropdown-content a:hover {background-color: #f1f1f1}
+                
+                .dropdown:hover .dropdown-content {
+                  display: block;
+                }
+                
+                .dropdown:hover .dropbtn {
+                  background-color: #3e8e41;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <h2>Dropdown Menu</h2>
+                <p>Move the mouse over the button to open the dropdown menu.</p>
+                
+                <div class="dropdown">
+                  <button class="dropbtn">Dropdown</button>
+                  <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                  </div>
+                </div>
+                
+                <p><strong>Note:</strong> We use href="#" for test links. In a real web site this would be URLs.</p>
+                
+                <hr>
+
+
+                <head>
+                  <style> 
+                  input[type=text] {
+                    width: 100%;
+                    padding: 5px 10px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                  }
+                  </style>
+                  </head>
+                  <body>
+                  
+                  <h2>Padded input fields</h2>
+                  
+                  <form>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname">
+                  </form>
+             <hr>  
+             
+             <style>
+              input[type=text], select {
+                width: 100%;
+                padding: 5px 5px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+              }
+              
+              input[type=submit] {
+                width: 50%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 2px 2px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              }
+              
+              input[type=submit]:hover {
+                background-color: #45a049;
+              }
+              
+              div {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 5px;
+              }
+              </style>
+              <body>
+              
+              <h3>Using CSS to style an HTML Form</h3>
+              
+              <div>
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+              <hr>
+              <!DOCTYPE html>
+              <html lang="en">
+              <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+              </head>
+              <body>
+                
+</html>
