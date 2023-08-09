@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Page Layout</title>
+    <!-- Internal CSS -->
+    <style>
+        #page {
+            background-color: lightblue;
+        }
+
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 20px;
+        }
+
+        h2 {
+            text-transform: capitalize;
+            color: red;
+        }
+
+        #Outer {
+            font-size: 25px;
+            background-color: pink;
+        }
+
+        #Inner {
+            font-size: 20px;
+        }
+
+        button {
+            background-color: #d9eb34;
+            color: rgb(136, 6, 34);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <h1>Computer Programming</h1>
+        </header>
+
+        <main>
+            <section>
+                <!-- The <span> element is an inline container used to mark up a part of a text, or a part of a document. -->
+                <span>
+                    <!-- Inline CSS -->
+                    <h2 style="color:royalblue;">What is computer programming?</h2>
+                </span>
+                <!-- The <div> element is often used as a container for other HTML elements. -->
+                <div>
+                    <p style="color:red;">Computer programming is the process of performing particular computations
+                        computing results, usually by designing and building executable computer programs. Programming involves tasks such as analysis, generating algorithms, profiling algorithms' accuracy and resource consumption, and the implementation of algorithms (usually in a particular programming language, commonly referred to as coding). The source code of a program is written in one or more languages that are intelligible to programmers, rather than machine code, which is directly executed by the central processing performance of a task on a computer, often for solving a given problem. Proficient programming thus usually requires expertise in several different subjects, including knowledge of the application domain, specialized algorithms, and formal logic.</p>
+                </div>
+            </section>
+
+            <section>
+                <a href="https://www.w3schools.com/" target="_main">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/2175px-W3Schools_logo.svg.png"
+                        alt="Coding Website" height="100">
+                </a>
+            </section>
+        </main>
+
+        <footer>
+            <p><b>Contact us:</b> @w3school.com</p>
+        </footer>
+    </div>
+    <hr>
+
+    <h2>first heading</h2>
+
+    <div id="Outer">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, laudantium tempore veritatis, incidunt voluptatem excepturi eum nemo mollitia sit voluptates eos officiis delectus vero aliquam autem dicta vel ab
+        totam? Repellendus culpa, magnam obcaecati voluptates officiis sunt voluptas eveniet sit reprehenderit nulla tempore. Harum deleniti ab dolorum!
+        <div id="Inner">
+            Doloremque, culpa eligendi corrupti nihil voluptate tenetur enim aspernatur, architecto voluptates, porro quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, commodi quisquam exercitationem tenetur pariatur quo fugiat odio magnam odit laboriosam saepe sint perferendis iusto voluptatem, est labore sequi vero beatae.
+        </div>  
+    </div>
+    <br>
+    <button>Click me</button>
+
+</body>
+
+</html>
