@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Advanced</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div id="example">
+        <h1>Multiple Backgrounds</h1>
+        <p>The following div element has two background images:</p>
+        <h1>Lorem Ipsum Dolor</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam deserunt voluptates repudiandae fuga! Repellendus nemo debitis voluptatem sint mollitia fugit ad, quos nisi, ut similique sapiente nesciunt fuga exercitationem voluptatibus?
+        Quae dolorem sed, asperiores nobis nihil repellendus dolores nulla laudantium laborum numquam assumenda vel, dicta id, facere exercitationem tempora odio veniam magni adipisci similique. Quam officiis sapiente neque quaerat voluptas?
+        Ex ab architecto sunt autem ipsa, et impedit in consequuntur doloribus velit officiis expedita vero vitae sit asperiores reprehenderit recusandae repellendus nemo, quidem hic dicta suscipit fuga quaerat? Distinctio, provident?
+        Magnam culpa ea facilis et eligendi quia veniam, iusto ipsam inventore libero adipisci natus totam perspiciatis magni! Dolor nemo quaerat sed, exercitationem quidem praesentium numquam incidunt voluptatibus, earum maiores ad.
+        Delectus dignissimos maxime, aut beatae enim facere itaque sit sapiente! Vero mollitia facere eveniet quos eos quae pariatur asperiores explicabo voluptas dicta molestias modi ab iusto accusamus officia, aperiam provident!</p>
+    </div>
+    <hr>
+
+    <h1>The background-origin Property</h1>
+
+    <p>No background-origin (padding-box is default):</p>
+    <div id="example1">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.</p>
+    </div>
+
+    <p>background-origin: border-box:</p>
+    <div id="example2">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.</p>
+    </div>
+
+    <p>background-origin: content-box:</p>
+    <div id="example3">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.</p>
+    </div>
+    <hr>
+
+    <h1>The background-clip Property</h1>
+
+    <p>No background-clip (border-box is default):</p>
+    <div id="example4">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+    </div>
+
+    <p>background-clip: padding-box:</p>
+    <div id="example5">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+    </div>
+
+    <p>background-clip: content-box:</p>
+    <div id="example6">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+    </div>
+    <hr>
+
+
+    <h1>CSS Border Images</h1>
+    <h1>The border-image Property</h1>
+    <p id="borderimg1">border-image: url(border.png) 50 round;</p>
+    <p id="borderimg2">border-image: url(border.png) 20% round;</p>
+    <p id="borderimg3">border-image: url(border.png) 30% round;</p>
+    <hr>
+
+    <h1>CSS Rounded Corners</h1>
+    <h2>The border-radius Property</h2>
+    <p>Elliptical border - border-radius: 50px / 15px:</p>
+    <p id="rcorners1"></p>
+    <p>Elliptical border - border-radius: 15px / 50px:</p>
+    <p id="rcorners2"></p>
+    <p>Ellipse border - border-radius: 50%:</p>
+    <p id="rcorners3"></p>
+    <hr>
+
+    <h1>CSS Gradients</h1>
+
+    <h2>Linear Gradient</h2>
+    <p>This linear gradient starts red at the top, transitioning to yellow at the bottom:</p>
+    <div id="grad1"></div>
+    <br>
+    <div id="grad2" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold">
+        Rainbow Background
+    </div>
+    <hr>
+
+    <h2>Radial Gradient</h2>
+    <p>Ellipse (this is default)</p>
+    <div id="grad3"></div>
+    <strong>Circle:</strong>
+    <div id="grad4"></div>
+    <hr>
+
+    <h2>Conic Gradients</h2>
+    <p>Conic Gradient - Three Colors</p>
+    <div id="grad5"></div>
+    <p>Conic Gradient - Pie Chart</p>
+    <div id="grad6"></div>
+    <hr>
+
+    <h1>CSS Shadow Effects</h1>
+    <h1 style="text-shadow: 2px 2px;">With CSS we can create shadow effects!</h1>
+    <h1 style="text-shadow: 2px 2px red;">With CSS we can create shadow effects!</h1>
+    <h1 style="text-shadow: 2px 2px 5px red;">With CSS we can create shadow effects!</h1>
+    <h1 style="color: white; text-shadow: 2px 2px 4px #000000;">With CSS we can create shadow effects!</h1>
+    <h1 style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">With CSS we can create
+        shadow effects!</h1>
+    <h1 style="text-shadow: 0 0 3px #FF0000;">With CSS we can create shadow effects!</h1>
+    <h1 style="text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;">With CSS we can create shadow effects!</h1>
+    <h1 style="color: coral; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">With CSS we can create
+        shadow effects!</h1>
+    <hr>
+
+    <h1>CSS Box Shadow</h1>
+    <h2>The box-shadow Property</h2>
+    <div id="box1">This is a div element with a box-shadow</div><br>
+    <div id="box2">A div element with a lightblue box-shadow</div>
+    <hr>
+
+    <h1>Create Cards</h1>
+    <p>The box-shadow property can be used to create paper-like cards:</p>
+    <div class="card">
+        <div class="header">
+            <h1>14</h1>
+        </div>
+
+        <div class="container">
+            <p>January 14, 2021</p>
+        </div>
+    </div>
+    <hr>
+
+    <h1>Create Polaroid Images</h1>
+    <p>The box-shadow property can be used to create polaroid images:</p>
+    <div class="polaroid">
+        <img src="img_rock.jpg" alt="Norway" style="width:100%">
+        <div class="container">
+            <p>Hardanger, Norway</p>
+        </div>
+    </div>
+    <hr>
+
+    <h1>The word-break Property</h1>
+    <p class="test1">This paragraph contains some text. This line will-break-at-hyphens.</p>
+    <p class="test2">This paragraph contains some text. The lines will break at any character.</p>
+    <hr>
+
+    <h2>Rounded Image</h2>
+    <p>Use the border-radius property to create rounded images:</p>
+    <img src="img_forest.jpg" alt="Paris" width="300" height="300" style="border-radius: 8px;">
+    <hr>
+
+    <h2>Circled Image</h2>
+    <p>Use the border-radius property to create circled images:</p>
+    <img src="img_forest.jpg" alt="Paris" width="300" height="300" style="border-radius: 50%;">
+    <hr>
+
+    <h2>Responsive Image</h2>
+    <p>Responsive images will automatically adjust to fit the size of the screen.</p>
+    <p>Resize the browser window to see the effect:</p>
+    <img src="img_5terre.jpg" alt="Cinque Terre" width="1000" height="300" style="max-width: 100%;height: auto;">
+    <hr>
+
+    <h1>Create Multiple Columns</h1>
+    <div class="newspaper">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, explicabo debitis sit fuga maiores vero perspiciatis qui totam sed, praesentium unde illum! Ut totam, ullam rerum molestias cum officia vitae.
+       Iure harum commodi, aperiam fuga deleniti natus, eum nisi sint quos reiciendis earum provident nulla, eveniet odit necessitatibus. Atque quas aspernatur reprehenderit facere enim suscipit necessitatibus iusto quia adipisci excepturi.
+       Fugit quod facere officia saepe, exercitationem architecto? Nam id ab facilis nulla soluta itaque ipsam nesciunt eius commodi. Nobis error dicta laudantium perferendis, earum expedita dolorum esse inventore nostrum necessitatibus.
+       Molestiae molestias aut laudantium est asperiores. Ipsum molestiae minus eos! Accusantium in ratione doloribus enim ad. Molestias sapiente fugiat rerum quam doloremque, soluta placeat magni pariatur eveniet blanditiis molestiae natus!
+       Obcaecati doloribus error iste quam consequatur laudantium, corrupti, asperiores similique tempora, quae distinctio facilis quos harum ducimus exercitationem dolorum est rem! Quam, ipsam. Adipisci, pariatur eaque! Molestias ipsam illum quia!
+       Adipisci aspernatur, dolorem id blanditiis, corrupti explicabo nobis temporibus amet nam et optio, iure ipsum. Nulla, officia harum non dicta aliquam quam doloribus eaque ab inventore impedit nostrum odio nihil?
+       Minima inventore quae suscipit, fugiat enim consequatur ipsam voluptate excepturi nam iste sed magnam illum cumque voluptatum tempore odio eius possimus velit facere ut harum esse quaerat. Itaque, nesciunt eum.
+       Magni nemo ipsa eaque neque et porro, laudantium earum harum sit inventore? Esse amet animi dicta. In, minima suscipit. Aspernatur provident fugiat architecto officiis cum necessitatibus veritatis totam nam. Amet.
+       Dolores deleniti tempora iste, vel error quidem enim sit ratione laboriosam cum ab accusantium, perspiciatis velit impedit! Doloribus illum voluptatem aperiam sit impedit? Autem animi unde tempora, sed aut nesciunt.
+       Asperiores soluta doloremque temporibus sit consectetur accusamus? Suscipit, libero nemo quibusdam vel corrupti reiciendis eum possimus cupiditate ipsam. Odio ut commodi veniam quidem distinctio eveniet est neque quaerat eligendi aspernatur.
+    </div>
+    <hr>
+
+    <h1>CSS Buttons</h1>
+    <h2>Hoverable Buttons</h2>
+    <p>Use the :hover selector to change the style of the button when you move the mouse over it.</p>
+    <button class="button button1">Green</button>
+    <button class="button button2">Blue</button>
+    <button class="button button3">Red</button>
+    <button class="button button4">Gray</button>
+    <button class="button button5">Black</button>
+    <hr>
+
+    <h1>CSS Pagination</h1>
+    <p>Move the mouse over the numbers.</p>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <hr>
+
+    <h1>The object-fit Property</h1>
+    <h2>No object-fit:</h2>
+    <img src="img_tree.png" alt="Paris" style="width:200px;height:300px">
+
+    <h2>object-fit: fill (this is default):</h2>
+    <img class="fill" src="img_tree.png" alt="Paris" style="width:200px;height:300px">
+
+    <h2>object-fit: contain:</h2>
+    <img class="contain" src="img_tree.png" alt="Paris" style="width:200px;height:300px">
+
+    <h2>object-fit: cover:</h2>
+    <img class="cover" src="img_tree.png" alt="Paris" style="width:200px;height:300px">
+
+    <h2>object-fit: scale-down:</h2>
+    <img class="scale-down" src="img_tree.png" alt="Paris" style="width:200px;height:300px">
+
+    <h2>object-fit: none:</h2>
+    <img class="none" src="img_tree.png" alt="Paris" style="width:200px;height:300px">
+    <hr>
+
+    <h1>The resize Property</h1>
+    <div class="resize">
+        <p>Let the user resize both the height and the width of this div element.</p>
+        <p>To resize: Click and drag the bottom right corner of this div element.</p>
+    </div>
+
+    <h1>Using the var() Function</h1>
+    <div class="containerz">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar
+            felis blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar
+            felis blandit.</p>
+        <p>
+            <button class="buttons">Yes</button>
+            <button class="buttons">No</button>
+        </p>
+    </div>
+
+    <h2>Responsive navigation menu</h2>
+    <p>Resize the browser window to see the effect: When the screen is less than 600px, the navigation menu will be
+        displayed vertically instead of horizontally.</p>
+    <div class="topnav">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+
+    <h2>Responsive Four Column Layout</h2>
+    <p><strong>Resize the browser window to see the responsive effect.</strong> On screens that are 992px wide or less,
+        the columns will resize from four columns to two columns. On screens that are 600px wide or less, the columns
+        will stack on top of each other instead of next to eachother.</p>
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <h2>Column 1</h2>
+            <p>Some text..</p>
+        </div>
+
+        <div class="column" style="background-color:#bbb;">
+            <h2>Column 2</h2>
+            <p>Some text..</p>
+        </div>
+
+        <div class="column" style="background-color:#ccc;">
+            <h2>Column 3</h2>
+            <p>Some text..</p>
+        </div>
+
+        <div class="column" style="background-color:#ddd;">
+            <h2>Column 4</h2>
+            <p>Some text..</p>
+        </div>
+    </div>
+
+    <h1>Flexible Boxes</h1>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p>Try to resize the browser window.</p>
+    <p>A container with "flex-wrap: nowrap;" will never wrap its items.</p>
+    <p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p>
+
+    <h1>The flex-wrap Property</h1>
+    <p>The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary:</p>
+    <div class="flex-container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+    </div>
+    <p>Try resizing the browser window.</p>
+
+    <h1>Flexible Items</h1>
+    <div class="flex-container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <p>All direct children of a flexible container becomes flexible items.</p>
+
+    <!-- Note -->
+    <div style="background:yellow;padding:5px">
+        <h4 style="text-align:center">Resize the browser window to see the responsive effect.</h4>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>My Website</h1>
+        <p>With a <b>flexible</b> layout.</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Experiance</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <h5>Photo of me:</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div>
+        </div>
+        <div class="main">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco.</p>
+            <br>
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Sep 2, 2017</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+
+</body>
+
+</html>

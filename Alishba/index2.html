@@ -4,89 +4,397 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Page Layout</title>
-    <!-- Internal CSS -->
+    <title>CSS Properties</title>
     <style>
-        #page {
-            background-color: lightblue;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        h1 {
-            color: blue;
+        .container {
+            background: #eee;
+            width: 600px;
+            margin: 50px auto 0;
+            padding: 10px;
+            border: 3px solid orange;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: stretch;
+        }
+
+        .item1 {
+            background: #1C448E;
+        }
+
+        .item2 {
+            background: #FF8987;
+        }
+
+        .item3 {
+            background: #88CFC3;
+        }
+
+        .item4 {
+            background: #6F8695;
+        }
+
+        .item5 {
+            background: #A8FF82;
+        }
+
+        .item6 {
+            background: #431D8F;
+        }
+
+        .item7 {
+            background: #716D94;
+        }
+
+        .item8 {
+            background: #947C6D;
+        }
+
+        .items {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .row:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: #9933cc;
+            color: #ffffff;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #33b5e5;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+
+        .aside {
+            background-color: #33b5e5;
+            padding: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .footer {
+            background-color: #0099cc;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
             text-align: center;
         }
 
-        p {
-            font-family: verdana;
-            font-size: 20px;
+        .grid-container1 {
+            display: grid;
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
         }
 
-        h2 {
-            text-transform: capitalize;
-            color: red;
+        .grid-items {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
         }
 
-        #Outer {
-            font-size: 25px;
-            background-color: pink;
+        .item1 {
+            grid-column: 1 / span 2;
+            grid-row: 1;
         }
 
-        #Inner {
-            font-size: 20px;
+        .item2 {
+            grid-column: 3;
+            grid-row: 1 / span 2;
         }
 
-        button {
-            background-color: #d9eb34;
-            color: rgb(136, 6, 34);
+        .item5 {
+            grid-column: 1 / span 3;
+            grid-row: 3;
         }
     </style>
 </head>
 
 <body>
-    <div id="page">
-        <header>
-            <h1>Computer Programming</h1>
-        </header>
+    <h1 style="background: orange;font-size: 50px;font-weight: bold;text-align: center;">CSS FLEXBOX</h1>
+    <div class="container">
+        <div class="items item1">one</div>
+        <div class="items item2">two</div>
+        <div class="items item3">three</div>
+        <div class="items item4">four</div>
+        <div class="items item5">five</div>
+        <div class="items item6">six</div>
+        <div class="items item7">seven</div>
+        <div class="items item8">eight</div>
+    </div><br>
+    <hr>
 
-        <main>
-            <section>
-                <!-- The <span> element is an inline container used to mark up a part of a text, or a part of a document. -->
-                <span>
-                    <!-- Inline CSS -->
-                    <h2 style="color:royalblue;">What is computer programming?</h2>
-                </span>
-                <!-- The <div> element is often used as a container for other HTML elements. -->
-                <div>
-                    <p style="color:red;">Computer programming is the process of performing particular computations
-                        computing results, usually by designing and building executable computer programs. Programming involves tasks such as analysis, generating algorithms, profiling algorithms' accuracy and resource consumption, and the implementation of algorithms (usually in a particular programming language, commonly referred to as coding). The source code of a program is written in one or more languages that are intelligible to programmers, rather than machine code, which is directly executed by the central processing performance of a task on a computer, often for solving a given problem. Proficient programming thus usually requires expertise in several different subjects, including knowledge of the application domain, specialized algorithms, and formal logic.</p>
-                </div>
-            </section>
+    <div class="header">
+        <h1>Chania</h1>
+    </div>
 
-            <section>
-                <a href="https://www.w3schools.com/" target="_main">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/2175px-W3Schools_logo.svg.png"
-                        alt="Coding Website" height="100">
-                </a>
-            </section>
-        </main>
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+            </ul>
+        </div>
 
-        <footer>
-            <p><b>Contact us:</b> @w3school.com</p>
-        </footer>
+        <div class="col-6 col-s-9">
+            <h1>The City</h1>
+            <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts,
+                the old town and the modern city.</p>
+            <img src="img_chania.jpg" width="460" height="345">
+        </div>
+
+        <div class="col-3 col-s-12">
+            <div class="aside">
+                <h2>What?</h2>
+                <p>Chania is a city on the island of Crete.</p>
+                <h2>Where?</h2>
+                <p>Crete is a Greek island in the Mediterranean Sea.</p>
+                <h2>How?</h2>
+                <p>You can reach Chania airport from all over Europe.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Resize the browser window to see how the content respond to the resizing.</p>
     </div>
     <hr>
 
-    <h2>first heading</h2>
-
-    <div id="Outer">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, laudantium tempore veritatis, incidunt voluptatem excepturi eum nemo mollitia sit voluptates eos officiis delectus vero aliquam autem dicta vel ab
-        totam? Repellendus culpa, magnam obcaecati voluptates officiis sunt voluptas eveniet sit reprehenderit nulla tempore. Harum deleniti ab dolorum!
-        <div id="Inner">
-            Doloremque, culpa eligendi corrupti nihil voluptate tenetur enim aspernatur, architecto voluptates, porro quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, commodi quisquam exercitationem tenetur pariatur quo fugiat odio magnam odit laboriosam saepe sint perferendis iusto voluptatem, est labore sequi vero beatae.
-        </div>  
+    <div class="header">
+        <h1>Chania</h1>
     </div>
-    <br>
-    <button>Click me</button>
+
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-s-9">
+            <h1>The City</h1>
+            <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts,
+                the old town and the modern city.</p>
+            <video width="400" controls>
+                <source src="mov_bbb.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <div class="col-3 col-s-12">
+            <div class="aside">
+                <h2>What?</h2>
+                <p>Chania is a city on the island of Crete.</p>
+                <h2>Where?</h2>
+                <p>Crete is a Greek island in the Mediterranean Sea.</p>
+                <h2>How?</h2>
+                <p>You can reach Chania airport from all over Europe.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Resize the browser window to see how the content respond to the resizing.</p>
+    </div>
+
+    <h1>Grid Elements</h1>
+    <p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or
+        <em>inline-grid</em>.
+    </p>
+    <p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <h1>A Five Items Grid Layout</h1>
+    <div class="grid-container1">
+        <div class="grid-items item1">1</div>
+        <div class="grid-items item2">2</div>
+        <div class="grid-items item3">3</div>
+        <div class="grid-items item4">4</div>
+        <div class="grid-items item5">5</div>
+    </div>
+    <p>Direct child elements(s) of the grid container automatically becomes grid items.</p>
+    <p>Item 1, 2, and 5 are set to span multiple columns or rows.</p>
 
 </body>
 
