@@ -9,7 +9,7 @@
     
     <style>
         body {
-          background-color:whitesmoke;
+          background-color:greenyellow;
         }
         
         h1 {
@@ -40,15 +40,21 @@
             p.large {
               font-size: 300%;
             }
+            .shayan{
+              background-color: #008CBA;
+              width: 100%;
+            }
             </style>
             </head>
             <body>
-            
-            <h1 class="center">This heading will not be affected</h1>
-            <p class="center">This paragraph will be red and center-aligned.</p>
-            <p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p> 
-             <hr>
-
+            <div class="shayan">
+              <h1 class="center">This heading will not be affected</h1>
+              <p class="center">This paragraph will be red and center-aligned.</p>
+              <p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p> 
+               <hr>
+    
+            </div>
+     
 
              <style>
                 #para1 {
@@ -230,7 +236,7 @@ Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo
     
     <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.</p>
 
-    <div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit </div>
+    <div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
     </body>
     <hr>
 
@@ -611,6 +617,264 @@ Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Document</title>
               </head>
-              <body>
+              <br><br><br>
+
+
+
+
+
+              <hr>
+<head>
+<style>
+#div1 {
+  background-color:burlywood;
+  height: 100px;
+  width: max(50%, 300px);
+}
+</style>
+</head>
+<body>
+
+<h1>The max() Function</h1>
+
+<p>Use max() to set the width of #div1 to whichever value is largest, 50% or 300px:</p>
+
+<div id="div1">Some text...</div>
+
+<p>Resize the browser window to see the effect.</p>
+
+</body>
+<hr>
+
+
+<head>
+<style> 
+#rcorners1 {
+  border-radius: 15px 50px 30px 5px;
+  background:burlywood;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
+#rcorners2 {
+  border-radius: 15px 50px 30px;
+  background: burlywood;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
+#rcorners3 {
+  border-radius: 15px 50px;
+  background: burlywood;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+} 
+
+#rcorners4 {
+  border-radius: 15px;
+  background: burlywood;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+} 
+</style>
+</head>
+<body>
+
+<h1>The border-radius Property</h1>
+
+<p>Four values - border-radius: 15px 50px 30px 5px:</p>
+<p id="rcorners1"></p>
+
+<p>Three values - border-radius: 15px 50px 30px:</p>
+<p id="rcorners2"></p>
+
+<p>Two values - border-radius: 15px 50px:</p>
+<p id="rcorners3"></p>
+
+<p>One value - border-radius: 15px:</p>
+<p id="rcorners4"></p>
+
+</body>
+<hr>
+
+
+<head>
+  <style>
+  #p1 {background-color:hsl(120,100%,50%);}
+  #p2 {background-color:hsl(120,100%,75%);}
+  #p3 {background-color:hsl(120,100%,25%);}
+  #p4 {background-color:hsl(120,60%,70%);}
+  #p5 {background-color:hsl(290,100%,50%);}
+  #p6 {background-color:hsl(290,60%,70%);}
+  </style>
+  </head>
+  <body>
+  
+  <h1>Define Colors With HSL Values</h1>
+  
+  <p id="p1">Green</p>
+  <p id="p2">Light green</p>
+  <p id="p3">Dark green</p>
+  <p id="p4">Pastel green</p>
+  <p id="p5">Violet</p>
+  <p id="p6">Pastel violet</p>
+  
+  </body>
+  
+<hr>
+
+
+
+
+<head>
+  <style>
+  body {
+    background-image: url("paper.gif");
+  }
+  
+  div.ex1 { 
+    background-color: lightgreen;
+    border: 2px solid black;
+    padding: 15px;
+  }
+  
+  div.ex2 { 
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 15px;
+  } 
+  </style>
+  </head>
+  <body>
+  
+  <h2>The transparent Keyword</h2>
+  
+  <div class="ex1">This div has a light green background.</div>
+  <br>
+  <div class="ex2">This div has a transparent background.</div>
+  
+  </body>
+  
+<hr>
+
+<head>
+  <style>
+  h1 {
+    text-shadow: 2px 2px;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h1>Text-shadow effect!</h1>
+  
+  </body>
+<hr>
+
+<style>
+  #grad1 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, yellow, green);
+  }
+  
+  #grad2 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+  }
+  
+  #grad3 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red 10%, green 85%, blue 90%);
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h1>Linear Gradients - Multiple Color Stops</h1>
+  <p><strong>Note:</strong> Color stops are spaced evenly when no percents are specified.</p>
+  
+  <h2>3 Color Stops (evenly spaced):</h2>
+  <div id="grad1"></div>
+  
+  <h2>7 Color Stops (evenly spaced):</h2>
+  <div id="grad2"></div>
+  
+  <h2>3 Color Stops (not evenly spaced):</h2>
+  <div id="grad3"></div>
+  
+  </body>
+
+
+
+
+  <head>
+    <style> 
+    div.test {
+      white-space: nowrap; 
+      width: 200px; 
+      overflow: hidden; 
+      border: 1px solid #000000;
+    }
+    
+    div.test:hover {
+      overflow: visible;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <p>Hover over the two divs below, to see the entire text.</p>
+    <div class="test" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
+    <br>
+    <div class="test" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
+    
+    </body>
+<hr>
+
+
+<head>
+  <style>
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button2 {background-color: #008CBA;} /* Blue */
+  .button3 {background-color: #f44336;} /* Red */ 
+  .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+  .button5 {background-color: #555555;} /* Black */
+  </style>
+  </head>
+  <body>
+  
+  <h2>Button Colors</h2>
+  
+  <p>Change the background color of a button with the background-color property:</p>
+  
+  <button class="button">Green</button>
+  <button class="button button2">contact us </button>
+  <button class="button button3">about us</button>
+  <button class="button button4">information</button>
+  <button class="button button5">apply now</button>
+  
+  </body>
+  <br>
+  <hr>   
+  </html>
+
                 
-</html>
