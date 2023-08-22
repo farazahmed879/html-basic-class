@@ -9,11 +9,11 @@
 <body>
     <style>
         body {
-          background-color: lightblue;
+          background-color: rgb(248, 252, 253);
         }
         
         h1 {
-          color: white;
+          color: rgb(12, 12, 12);
           text-align: center;
         }
         
@@ -33,7 +33,7 @@
         <style>
             p.center {
               text-align: center;
-              color: red;
+              color: rgb(12, 12, 12);
             }
             
             p.large {
@@ -48,32 +48,6 @@
             <p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p> 
             
             </body>
-
-            <style>
-                * {
-                  text-align: center;
-                  color: blue;
-                }
-                </style>
-                </head>
-                <body>
-                
-                <h1>Hello world!</h1>
-                
-                <p>Every element on the page will be affected by the style.</p>
-                <p id="para1">Me too!</p>
-                <p>And me!</p>
-                
-                </body>
-                <head>
-                    <link rel="stylesheet" href="mystyle.css">
-                    </head>
-                    <body>
-                    
-                    <h1>This is a heading</h1>
-                    <p>This is a paragraph.</p>
-                    
-                    </body>
 
                     <style>
                         /* This is a single-line comment */
@@ -90,21 +64,21 @@
                         
                         </body>
 
-                        <h1 style="background-color:DodgerBlue;">Hello World</h1>
+                        <h1 style="background-color:rgb(235, 243, 241);">Hello World</h1>
 
-                        <p style="background-color:Tomato;">
+                        <p style="background-color:rgb(241, 231, 231);">
                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
                         </p>
 
-                        <h3 style="color:Tomato;">Hello World</h3>
+                        <h3 style="color:rgb(14, 13, 13);">Hello World</h3>
 
-                        <p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <p style="color:rgb(15, 15, 15);">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 
-                        <p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        <p style="color:rgb(7, 7, 7);">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
 
 
-                        <h1 style="border: 2px solid Tomato;">Hello World</h1>
+                        <h1 style="border: 2px solid rgb(12, 12, 12);">Hello World</h1>
 
                         <h1 style="border: 2px solid DodgerBlue;">Hello World</h1>
                         
@@ -576,6 +550,245 @@
                                                               </div>
                                                               
                                                               </body>
-                                                          
+                                                              <br>
+                                                              <br>
+                                                              <br>
 
-                                                       
+                                                              <head>
+                                                                <style>
+                                                                #div1 {
+                                                                  background-color: rgb(236, 236, 200);
+                                                                  height: 100px;
+                                                                  width: max(50%, 300px);
+                                                                }
+                                                                </style>
+                                                                </head>
+                                                                <body>
+                                                                
+                                                                <h1>The max() Function</h1>
+                                                                
+                                                                <p>Use max() to set the width of #div1 to whichever value is largest, 50% or 300px:</p>
+                                                                
+                                                                <div id="div1">Some text...</div>
+                                                                
+                                                                <p>Resize the browser window to see the effect.</p>
+                                                                
+                                                                </body>
+
+                                                                <head>
+<style> 
+#rcorners1 {
+  border-radius: 15px 50px 30px 5px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
+#rcorners2 {
+  border-radius: 15px 50px 30px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
+#rcorners3 {
+  border-radius: 15px 50px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+} 
+
+#rcorners4 {
+  border-radius: 15px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+} 
+</style>
+</head>
+<body>
+
+<h1>The border-radius Property</h1>
+
+<p>Four values - border-radius: 15px 50px 30px 5px:</p>
+<p id="rcorners1"></p>
+
+<p>Three values - border-radius: 15px 50px 30px:</p>
+<p id="rcorners2"></p>
+
+<p>Two values - border-radius: 15px 50px:</p>
+<p id="rcorners3"></p>
+
+<p>One value - border-radius: 15px:</p>
+<p id="rcorners4"></p>
+
+</body>
+
+
+<head>
+  <style>
+  #p1 {background-color:hsla(120,100%,50%,0.3);}
+  #p2 {background-color:hsla(120,100%,75%,0.3);}
+  #p3 {background-color:hsla(120,100%,25%,0.3);}
+  #p4 {background-color:hsla(120,60%,70%,0.3);}
+  #p5 {background-color:hsla(290,100%,50%,0.3);}
+  #p6 {background-color:hsla(290,60%,70%,0.3);}
+  </style>
+  </head>
+  <body>
+  
+  <h1>Define Colors With HSLA Values</h1>
+  
+  <p id="p1">Green</p>
+  <p id="p2">Light green</p>
+  <p id="p3">Dark green</p>
+  <p id="p4">Pastel green</p>
+  <p id="p5">Violet</p>
+  <p id="p6">Pastel violet</p>
+  
+  </body>
+
+
+  <head>
+    <style>
+    h1 {
+      text-shadow: 2px 2px;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h1>Text-shadow effect!</h1>
+    
+    </body>
+
+    <head>
+      <style>
+      body {
+        background-image: url("paper.gif");
+      }
+      
+      div.ex1 { 
+        background-color: lightgreen;
+        border: 2px solid black;
+        padding: 15px;
+      }
+      
+      div.ex2 { 
+        background-color: transparent;
+        border: 2px solid black;
+        padding: 15px;
+      } 
+      </style>
+      </head>
+      <body>
+      
+      <h2>The transparent Keyword</h2>
+      
+      <div class="ex1">This div has a light green background.</div>
+      <br>
+      <div class="ex2">This div has a transparent background.</div>
+      
+      </body>
+
+      <head>
+        <style>
+        #grad1 {
+          height: 200px;
+          background-color: red; /* For browsers that do not support gradients */
+          background-image: linear-gradient(red, yellow, green);
+        }
+        
+        #grad2 {
+          height: 200px;
+          background-color: red; /* For browsers that do not support gradients */
+          background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+        }
+        
+        #grad3 {
+          height: 200px;
+          background-color: red; /* For browsers that do not support gradients */
+          background-image: linear-gradient(red 10%, green 85%, blue 90%);
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h1>Linear Gradients - Multiple Color Stops</h1>
+        <p><strong>Note:</strong> Color stops are spaced evenly when no percents are specified.</p>
+        
+        <h2>3 Color Stops (evenly spaced):</h2>
+        <div id="grad1"></div>
+        
+        <h2>7 Color Stops (evenly spaced):</h2>
+        <div id="grad2"></div>
+        
+        <h2>3 Color Stops (not evenly spaced):</h2>
+        <div id="grad3"></div>
+        
+        </body>
+
+
+        <head>
+          <style> 
+          p.test1 {
+            width: 140px; 
+            border: 1px solid #000000;
+            word-break: keep-all;
+          }
+          
+          p.test2 {
+            width: 140px; 
+            border: 1px solid #000000;
+            word-break: break-all;
+          }
+          </style>
+          </head>
+          <body>
+          
+          <h1>The word-break Property</h1>
+          
+          <p class="test1">This paragraph contains some text. This line will-break-at-hyphens.</p>
+          
+          <p class="test2">This paragraph contains some text. The lines will break at any character.</p>
+          
+          </body>
+
+          <head>
+            <style>
+            .button {
+              background-color: #4CAF50; /* Green */
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            
+            .button2 {background-color: #008CBA;} /* Blue */
+            .button3 {background-color: #f44336;} /* Red */ 
+            .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+            .button5 {background-color: #555555;} /* Black */
+            </style>
+            </head>
+            <body>
+            
+            <h2>Button Colors</h2>
+            
+            <p>Change the background color of a button with the background-color property:</p>
+            
+            <button class="button">Green</button>
+            <button class="button button2">Blue</button>
+            <button class="button button3">Red</button>
+            <button class="button button4">Gray</button>
+            <button class="button button5">Black</button>
+            
+            </body>
