@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb</title>
+</head>
+<head>
+    <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+    </script>
+    </head>
+    <body>
+    
+    <h2>Demo JavaScript in Head</h2>
+    
+    <p id="demo">A Paragraph.</p>
+    
+    <button type="button" onclick="myFunction()">Try it</button>
+    
+    </body>
+<body>
+    <h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:150px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+<h2>My First JavaScript</h2>
+
+<button type="onclick"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+<h2>The window.print() Method</h2>
+
+<p>Click the button to print the current page.</p>
+
+<button onclick="window.print()">Print this page</button>
+
+
+<h2>Activate Debugging</h2>
+
+<p>F12 on your keyboard will activate debugging.</p>
+<p>Then select "Console" in the debugger menu.</p>
+<p>Then click Run again.</p>
+
+<script>
+    console.log(5 + 6);
+    </script>
+    
+    
+    <h2>My First Web Page</h2>
+    <p>My first paragraph.</p>
+    
+    <script>
+    window.alert(5 + 6);
+    </script>
+
+
+<h2>JavaScript Statements</h2>
+
+<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+<p id="class"></p>
+   
+</p>
+<script>
+let x, y, z;  // Statement 1
+x = 9;        // Statement 2
+y = 8;        // Statement 3
+z = x + y;    // Statement 4
+document.getElementById("class").innerHTML =
+"The value of z is " +z+ ".";
+  
+</script>
+
+<h2>JavaScript Statements</h2>
+
+<p>JavaScript code blocks are written between { and }</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Hello Dolly!";
+  document.getElementById("demo2").innerHTML = "How are you?";
+}
+</script>
+<h2>JavaScript Statements</h2>
+
+<p>In HTML, JavaScript statements are executed by the browser.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello Dolly".;
+</script>
+
+<h2>The <b>let</b> Keyword Creates Variables</h2>
+
+<p id="number"></p>
+
+<script>
+let a, b;
+a = 5 + 6;
+b = x * 10;
+document.getElementById("number").innerHTML = y;
+</script>
+
+<h1>JavaScript Variables</h1>
+
+<p>In this example, price1, price2, and total are variables.</p>
+
+<p id="add"></p>
+
+<script>
+const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;
+document.getElementById("add").innerHTML =
+"The total is: " + total;
+</script>
+
+
+<p id="block"></p>
+
+<script>
+var  x = 10;
+// Here x is 10
+
+{  
+var x = 2;
+// Here x is 2
+}
+
+// Here x is 2
+document.getElementById("block").innerHTML = x;
+</script>
+
+<h2>Redeclaring a Variable Using let</h2>
+
+<p id=" nonblock"></p>
+
+<script>
+let  x = 10;
+// Here x is 10
+
+{  
+  let x = 2;
+  // Here x is 2
+}
+
+// Here x is 10
+document.getElementById("nonblock").innerHTML = x;
+</script>
+
+<h1>JavaScript String Operators</h1>
+<h2>The + Operator</h2>
+<p>Adding a number and a string, returns a string.</p>
+
+<p id="calculation"></p>
+
+<script>
+let d = 5 + 5;
+let f = "5" + 5;
+let l = "Hello" + 5;
+document.getElementById("calculation").innerHTML =
+x + "<br>" + y + "<br>" + z;
+</script>
+
+    
+
+</body>
+</html>
